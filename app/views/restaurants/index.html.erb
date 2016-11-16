@@ -1,6 +1,7 @@
+
 <h1>See all Restaurants</h1>
 
-<%= link_to "Add a Restaurant", new_restaurant_path %>
+<%= link_to "Add a Cupcake Shop", new_restaurant_path, {class: "center btn btn-primary btn-lg"}%>
 
 <% @restaurants.each do |restaurant| %>
     <h3><%= link_to restaurant.name, restaurant_path(restaurant) %> </h3>
